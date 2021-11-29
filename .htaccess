@@ -1,0 +1,7 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^afed\.acsschools\.eschool\-ng\.com$
+RewriteRule ^/?$ "https\:\/\/eschool\-ng\.com\/afed\.acsschools\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} www.afed.acsschools.eschool-ng.com
+RewriteRule (.*) http://afed.acsschools.eschool-ng.com/$1 [R=301,L]
